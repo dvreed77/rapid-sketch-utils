@@ -1,0 +1,34 @@
+{
+    "entryPoints": [
+        "src/geometry/index.ts",
+        "src/random/index.ts",
+        "src/utils/index.ts"
+    ], // Replace with the main entry file of your library
+    // "out": "docs",
+    "name": "Sketch Utils",
+    "tsconfig": "tsconfig.json", // Ensure this points to your TypeScript configuration file
+    "includeVersion": true, // Adds the library version from package.json to the documentation
+    "excludePrivate": true, // Excludes private methods from the docs
+    "excludeProtected": true, // Excludes protected methods from the docs
+    "excludeInternal": true, // Excludes methods marked @internal,
+    "entryPointStrategy": "expand",
+    "theme": "default",
+    "outputs": [
+        {
+            "name": "html",
+            "path": "./docs_html"
+        },
+        {
+            "name": "html",
+            "path": "./docs_html_full_nav",
+            "options": {
+                "navigation": {
+                    // "includeCategories": true,
+                    // "includeGroups": true,
+                    // "excludeReferences": false,
+                    // "includeFolders": true
+                }
+            }
+        }
+    ]
+}
