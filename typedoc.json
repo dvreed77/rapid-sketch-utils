@@ -2,7 +2,8 @@
     "entryPoints": [
         "src/geometry/index.ts",
         "src/random/index.ts",
-        "src/utils/index.ts"
+        "src/utils/index.ts",
+        "src/drawTools/index.ts"
     ], // Replace with the main entry file of your library
     // "out": "docs",
     "name": "Sketch Utils",

@@ -6,3 +6,4 @@ export * from './lerp';
 export * from './linspace';
 export * from './array';
 export * from './isOdd';
+export * from './GridHelper';
