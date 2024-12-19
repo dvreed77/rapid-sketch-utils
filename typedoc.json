@@ -4,8 +4,7 @@
         "src/random/index.ts",
         "src/utils/index.ts",
         "src/drawTools/index.ts"
-    ], // Replace with the main entry file of your library
-    // "out": "docs",
+    ],
     "name": "Sketch Utils",
     "tsconfig": "tsconfig.json", // Ensure this points to your TypeScript configuration file
     "includeVersion": true, // Adds the library version from package.json to the documentation
@@ -17,19 +16,7 @@
     "outputs": [
         {
             "name": "html",
-            "path": "./docs_html"
-        },
-        {
-            "name": "html",
-            "path": "./docs_html_full_nav",
-            "options": {
-                "navigation": {
-                    // "includeCategories": true,
-                    // "includeGroups": true,
-                    // "excludeReferences": false,
-                    // "includeFolders": true
-                }
-            }
+            "path": "./docs"
         }
     ]
 }
