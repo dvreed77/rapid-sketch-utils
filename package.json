@@ -1,6 +1,6 @@
 {
-    "name": "sketch-utils",
-    "version": "1.0.0",
+    "name": "rapid-sketch-utils",
+    "version": "0.0.7",
     "type": "module",
     "exports": {
         ".": {
@@ -39,7 +39,6 @@
         "typescript-eslint": "^8.8.1",
         "vitest": "^2.1.8"
     },
-    "private": true,
     "dependencies": {
         "color": "^4.2.3",
         "d3": "^7.9.0",
