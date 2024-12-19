@@ -18,5 +18,8 @@
             "name": "html",
             "path": "./docs"
         }
-    ]
+    ],
+    "githubPages": true,
+    "readme": "none", // Use "none" to avoid overwriting
+    "footer": "Visit the repository: [GitHub Repo](https://github.com/dvreed77/rapid-sketch-utils)",
 }

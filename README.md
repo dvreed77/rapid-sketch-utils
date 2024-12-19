@@ -6,7 +6,7 @@ A collection of utilities to accelerate your workflow with Rapid-Sketch.
 
 The complete documentation for Rapid Sketch Utils is available here:
 
-[Rapid Sketch Utils Documentation](https://dvreed77.github.io/sketch-utils/)
+[Rapid Sketch Utils Documentation](https://dvreed77.github.io/rapid-sketch-utils/)
 
 Visit the link for installation instructions, API references, usage guides, and more.
 
