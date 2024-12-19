@@ -1,23 +1,27 @@
-# Rslib Project
+# Rapid Sketch Utils
 
-## Setup
+A collection of utilities to accelerate your workflow with Rapid-Sketch.
 
-Install the dependencies:
+## Documentation
 
-```bash
-pnpm install
-```
+The complete documentation for Rapid Sketch Utils is available here:
 
-## Get Started
+[Rapid Sketch Utils Documentation](https://dvreed77.github.io/sketch-utils/)
 
-Build the library:
+Visit the link for installation instructions, API references, usage guides, and more.
 
-```bash
-pnpm build
-```
+## Installation
 
-Build the library in watch mode:
+To add Rapid Sketch Utils to your project, use npm:
 
 ```bash
-pnpm dev
+npm install rapid-sketch-utils
 ```
+
+Contributing
+
+We welcome contributions! Feel free to open issues or submit pull requests to improve this project.
+
+License
+
+This project is licensed under the MIT License.
