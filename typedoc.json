@@ -3,7 +3,8 @@
         "src/geometry/index.ts",
         "src/random/index.ts",
         "src/utils/index.ts",
-        "src/drawTools/index.ts"
+        "src/drawTools/index.ts",
+        "src/color/index.ts"
     ],
     "name": "Rapid Sketch Utils",
     "tsconfig": "tsconfig.json", // Ensure this points to your TypeScript configuration file
@@ -20,7 +21,6 @@
         }
     ],
     "githubPages": true,
-    "readme": "none", // Use "none" to avoid overwriting
     "navigationLinks": {
         "Github": "https://github.com/dvreed77/rapid-sketch-utils"
     }
