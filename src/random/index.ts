@@ -2,7 +2,7 @@ import seedRandom from 'seed-random';
 import SimplexNoise from 'simplex-noise';
 
 export { randomNormal as randomGaussian } from 'd3';
-export * from './randomF';
+export * from './createRandomGenerator';
 export * from './randomShuffle';
 export * from './randomChance';
 export * from './randomFloat';
