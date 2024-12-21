@@ -1,3 +1,6 @@
+import { DrawOptions } from './types';
+import { applyDrawOptions } from './utils';
+
 /**
  * Represents a circle's dimensions.
  */
@@ -16,48 +19,6 @@ interface I_Circle {
    * The radius of the circle.
    */
   r: number;
-}
-
-/**
- * Options for drawing the circle.
- */
-interface DrawOptions {
-  /**
-   * The fill color of the circle. Default is `transparent` (no fill).
-   */
-  fillColor?: string;
-
-  /**
-   * The stroke color of the circle. Default is `red`.
-   */
-  strokeColor?: string;
-
-  /**
-   * The width of the stroke. Default is `1`.
-   */
-  lineWidth?: number;
-
-  /**
-   * Whether to use a dashed stroke. Default is `false` (solid stroke).
-   */
-  dashed?: boolean;
-
-  /**
-   * The pattern for dashed lines, defined as an array of numbers where
-   * the even indices represent lengths of dashes and odd indices represent
-   * lengths of gaps. Default is `[5, 5]`.
-   */
-  dashPattern?: number[];
-
-  /**
-   * Whether to fill the circle. Default is `true`.
-   */
-  fill?: boolean;
-
-  /**
-   * Whether to stroke the circle. Default is `true`.
-   */
-  stroke?: boolean;
 }
 
 /**
@@ -159,37 +120,11 @@ export function drawCircle(
 
   context.save(); // Save current state for later restoration
 
-  const {
-    fillColor = 'transparent', // Default no fill
-    strokeColor = 'red', // Default stroke color
-    lineWidth = 1, // Default stroke width
-    dashed = false, // Default solid line
-    dashPattern = [5, 5], // Default dash pattern
-    fill = true, // Default fill the circle
-    stroke = true, // Default stroke the circle
-  } = drawOptions;
-
   context.beginPath();
   context.moveTo(x + r, y);
   context.arc(x, y, r, 0, 2 * Math.PI);
 
-  // Fill circle if requested
-  if (fill) {
-    context.fillStyle = fillColor;
-    context.fill();
-  }
-
-  // Stroke circle if requested
-  if (stroke) {
-    context.lineWidth = lineWidth;
-    context.strokeStyle = strokeColor;
-
-    if (dashed) {
-      context.setLineDash(dashPattern); // Set dashed line pattern
-    }
-
-    context.stroke();
-  }
+  applyDrawOptions(context, drawOptions);
 
   context.restore(); // Restore saved state
 }
